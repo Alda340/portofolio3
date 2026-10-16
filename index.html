@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio - Robiathul Ada Wiah</title>
+<style>
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #1e293b;
+  --muted: #64748b;
+  --accent: #2563eb;
+  --border: #e2e8f0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+}
+header {
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+h1 { margin: 0 0 8px 0; font-size: 2rem; color: var(--text); }
+.role { color: var(--accent); font-weight: 600; font-size: 1.1rem; margin-bottom: 12px; }
+.bio { color: var(--muted); margin: 0; }
+section { margin-bottom: 28px; }
+h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 6px; margin-bottom: 12px; color: var(--text); }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { background: #eff6ff; color: #1e40af; padding: 4px 12px; border-radius: 99px; font-size: 0.85rem; font-weight: 500; border: 1px solid #bfdbfe; }
+.project-item { margin-bottom: 16px; }
+.project-item h3 { margin: 0 0 4px 0; font-size: 1rem; }
+.project-item p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+.actions { margin-top: 32px; display: flex; gap: 12px; }
+.btn { background: var(--accent); color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; justify-content: center; }
+.btn-secondary { background: #475569; }
+.btn:hover { opacity: 0.9; }
+
+@media print {
+  body { background: white; }
+  .container { border: none; box-shadow: none; margin: 0; padding: 20px; max-width: 100%; }
+  .actions { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Robiathul Ada Wiah</h1>
+    <div class="role">Mahasiswa Teknik Informatika </div>
+    <p class="bio">Tertarik pada pengembangan web, sistem informasi, dan pemanfaatan teknologi untuk menciptakan solusi digital yang bermanfaat.</p>
+  </header>
+
+  <section>
+    <h2>Kemampuan & Skill</h2>
+    <div class="pills">
+      <span class="pill">HTML & CSS</span>
+      <span class="pill">JavaScript</span>
+      <span class="pill">PHP</span>
+      <span class="pill"></span>
+      <span class="pill"></span>
+      <span class="pill"></span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Project Pilihan</h2>
+    <div class="project-item">
+      <h3>Sistem Toko Sembako</h3>
+      <p>Aplikasi berbasis web untuk mengelola stok barang, transaksi penjualan, dan laporan keuangan toko. (Teknologi: Laravel, MySQL)</p>
+    </div>
+    <div class="project-item">
+      <h3>Katalog Digital Akuakultur</h3>
+      <p>Website katalog desa untuk menampilkan informasi dan promosi hasil produk perikanan/akuakultur. (Teknologi: HTML, CSS, JavaScript)</p>
+    </div>
+    <div class="project-item">
+      <h3>Website Portofolio Pribadi</h3>
+      <p>Halaman profil digital untuk menampilkan biodata, keahlian, serta daftar project yang telah dikerjakan.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tools AI</h2>
+    <div class="pills">
+      <span class="pill">ChatGPT</span>
+      <span class="pill">Claude</span>
+      <span class="pill">Gemini</span>
+    </div>
+  </section>
+
+  <div class="actions">
+    <button class="btn" onclick="window.print()">🖨️ Cetak / Simpan ke PDF</button>
+    <a class="btn btn-secondary" href="https://github.com/" target="_blank" rel="noopener">Kunjungi GitHub ↗</a>
+  </div>
+</div>
+
+</body>
+</html>
